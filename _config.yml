@@ -13,14 +13,11 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Karishma Srikanth
+email: karishma.r.srikanth@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  Personal website
+github_username: karishmas26
 minimal_mistakes_skin: default
 search: true
 
@@ -31,7 +28,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,34 +55,26 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Karishma Srikanth"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+  bio    : "Data Scientist <br>
+            USAID Office of HIV/AIDS"
+  email  : "karishma.r.srikanth@gmail.com"
+  github : "karishmas26"
+  linkedin: "karishma-srikanth"
+  speakerdeck: "karishmas26"
 
 footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/karishmas26"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/karishma-srikanth/"
+    - label: "Speaker Deck"
+      icon: "fab fa-fw fa-speaker-deck"
+      url: "https://speakerdeck.com/karishmas26"
 
 defaults:
   # _posts
@@ -113,3 +102,18 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+  
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  work:
+    output: true
+    permalink: /work/:title/
+
+# Analytics
+analytics:
+  provider               : "google-gtag"
+  google:
+    tracking_id          : "G-NCWH48FZN7" # Replace with your Google Analytics tracking ID
+    domain               : "karishma.github.io" # Replace with your domain  
